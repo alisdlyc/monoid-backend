@@ -35,13 +35,13 @@
 │  │  │      └─alisdlyc
 │  │  │          └─monoid
 │  │  │              ├─config					// 配置MyBatis数据源
-│  │  │              ├─constants			 	// 配置Mapper文件路径
-│  │  │              ├─controller			 	// SpringBoot Controller文件
+│  │  │              ├─constants			// 配置Mapper文件路径
+│  │  │              ├─controller			// SpringBoot Controller文件
 │  │  │              ├─dal						// MongoDB 数据访问层dal
-│  │  │              ├─entity 				   	// 数据实体
+│  │  │              ├─entity 				// 数据实体
 │  │  │              ├─mapper					// MongoDB Mapper 文件
-│  │  │              ├─repository 		   		// 待定
-│  │  │              └─web					   	// Controller 测试
+│  │  │              ├─repository 		// 待定
+│  │  │              └─web					  // Controller 测试
 │  │  └─resources
 │  │      └─mybatis								// MyBatis *.Mapper.xml 文件地址
 ```
