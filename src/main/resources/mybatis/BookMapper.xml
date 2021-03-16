@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.alisdlyc.monoid.mapper.BookMapper">
+
+    <resultMap id="BooksList" type="com.alisdlyc.monoid.entity.Book">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="title" jdbcType="BIGINT" property="title" />
+        <result column="authors" jdbcType="VARCHAR" property="authors" />
+        <result column="classno" jdbcType="VARCHAR" property="classno" />
+        <result column="classnoAbs" jdbcType="VARCHAR" property="classnoAbs" />
+        <result column="commentCount" jdbcType="VARCHAR" property="commentCount" />
+        <result column="guancangCount" jdbcType="VARCHAR" property="guancangCount" />
+        <result column="heading" jdbcType="VARCHAR" property="heading" />
+        <result column="imgUrl" jdbcType="VARCHAR" property="imgUrl" />
+        <result column="isn" jdbcType="VARCHAR" property="isn" />
+        <result column="kejieCount" jdbcType="VARCHAR" property="kejieCount" />
+        <result column="libraryId" jdbcType="VARCHAR" property="libraryId" />
+        <result column="libraryName" jdbcType="VARCHAR" property="libraryName" />
+        <result column="pubdateDate" jdbcType="VARCHAR" property="pubdateDate" />
+        <result column="publisher" jdbcType="VARCHAR" property="publisher" />
+        <result column="reGrade" jdbcType="VARCHAR" property="reGrade" />
+        <result column="recCtrlId" jdbcType="VARCHAR" property="recCtrlId" />
+    </resultMap>
+
+    <select id="selectByKey" parameterType="String" resultType="BooksList">
+        select * from `books`
+    </select>
+
+</mapper>
